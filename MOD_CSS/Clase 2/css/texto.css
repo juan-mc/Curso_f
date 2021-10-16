@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    background-color: blueviolet;
+    font-size: 5px;
+}
+h1{
+    color: #fff;
+    font-size: 10em;/* toma el valor del padre y lo multiplica 5x10=50 px*/
+}
+h2{
+    font-size: 2rem;/* 2*16=32px , 1 rem equivale a 16 px en pc */
+}
+div
+{
+    background-color: aqua;
+}
+#u1
+{
+    height: 50px;
+}
+/* el ancho es dependiendo del padre en este caso el body */
+#u2
+{
+    width:50%;
+    height: 50px;
+}
+/* vw es el % pero de toda la ventana completa, no importa si tiene un padre*/
+#u3
+{
+    width:50vw;
+    height: 50px;
+}
+p{
+    font-size: 50px;
+    font-family:'Roboto';
+    font-weight: 500;/* cambiar el grosor de la tipografia , el grosor depende de la tipografia, puede que solo tenga tres tipos de grosor*/
+    font-style: italic;
+
+    text-align: left;
+    text-decoration:underline;
+    text-transform: capitalize;/* capitalize,uppercase,lowercase */
+    text-indent: 50px;/* la sangria */
+    text-shadow: 2px 2px 2px cyan;
+
+}

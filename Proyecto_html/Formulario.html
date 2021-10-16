@@ -1,0 +1,111 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Bugle</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <style>
+        * {
+        margin: 0;
+        font-size:large;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        body {
+            background-color: rgb(199, 199, 199);
+            color: black;
+        }
+        header img{
+            width: 99vw;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        hr{
+            color: black; 
+            border: solid;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        .marco{
+            /* color: rgb(199, 199, 199); */
+            background-color: black;
+        }
+        .principal
+        {
+            background-color: black;
+            color: white;
+        }
+        #as
+        {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/dailybugle_sf.png" alt="Encabezado de daily bugle">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><p>Inicio</p></a></li>
+            <li><a href="#"><p>Pagina 2</p></a></li>
+            <li><a href="#"><p>Pagina 3</p></a></li>
+            <li><a href="#"><p>Contactanos</p></a></li>
+        </ul>
+    </nav>
+    <br><hr><br>
+    <main>
+        <table>
+            <tr>
+                <td rowspan="4" style="color:rgb(199, 199, 199) ;"><pre>         marco           </pre></td>
+                <td class="marco" rowspan="4">.</td>
+                <td class="marco" colspan="3">.</td>
+                <td class="marco" rowspan="4">.</td>
+            </tr>
+            <tr>
+                <td><img src="img/trompeta.png" alt=""></td>
+                <td rowspan="2">
+                    <form action="">
+                        <h1 style="font-size:10vh;font-weight:bold;">Contactanos</h1><br>
+                        <label for="full_name">Nombre:</label>
+                        <input type="text" id="full_name" value="Fulanito de tal"><br><br>
+                        <pre><label for="fecha">     Fecha:</label><input type="date" id="fecha"></pre><br>
+                        <pre>¿Te ha gustado alguna sección del periodico?</pre>
+                        <ul>
+                            <li><label for="pag1">Inicio </label><input type="checkbox" id="pag1" name="pag1" value="1"></li>
+                            <li><label for="pag2">Pagina 2 </label><input type="checkbox" id="pag2" name="pag2" value="2"></li>
+                            <li><label for="pag3">Pagina 3 </label><input type="checkbox" id="pag3" name="pag3" value="3"></li>
+                            <li><label for="niguna">Ninguna </label><input type="checkbox" id="ninguna" name="ninguna" value="0"></li>
+                        </ul>
+                        
+                        <br>
+                        <pre>¿Es sucriptor del periodico?</pre>
+                        <label for="si">Si</label><input type="radio" id="si" name="sucripcion" value="1">
+                        <label for="no">No</label><input type="radio" id="no" name="sucripcion" value="0"><br><br>
+
+                        
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="marco" colspan="3">.</td>
+            </tr>
+        </table>
+    </main>
+    <br>
+    <hr>
+    <br>
+    <footer style="background-color: red;color: white;">
+        Autor:Campos Leaños Juan Manuel
+    </footer>
+</body>
+</html>

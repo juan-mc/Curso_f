@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Imagen</h2>
+    <img src="img/gusano.png" alt="Un gusano verde" title="Gusanito" width="300px" height="300px"> <!-- Width va en estilos -->
+    <!--Title es un tooltip, si se hace un hover en la imagen aparece el titulo  -->
+    <!-- "alt" es para texto alternativo  -->
+
+    <hr>
+    <audio src="media/pocion-de-minecraft-sonido.mp3" controls autoplay>
+    </audio>
+    <!-- Para que aparezca los controles de reproduccion se pone el atributo "controls" -->
+    <!-- El autoplay se reproduce cada que abra la pagina -->
+
+    <audio controls>
+        <source src="media/pocion-de-minecraft-sonido.mp3">
+        <source src="media/pocion-de-minecraft-sonido.mp3"><!-- Si no funciona el primero reproduce este -->
+        Tu navegador no soporta el elemento o la etiqueta de audio
+    </audio>
+    <hr>
+    <video src="media/ending_stories.mp4" width="300px" controls> </video>
+    <video width="300px" controls autoplay muted>
+        <source src="media/ending_stories.mp4">
+        <source src="media/ending_stories.mp4">
+        Tu navegador no soporta el elemento 
+    </video>
+</body>
+</html>

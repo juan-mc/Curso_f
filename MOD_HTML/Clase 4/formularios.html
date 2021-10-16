@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    
+    <form action="">
+        <label for="nombre">Nombre</label><!-- Se pone el for ya que si se da clic te envia a su input correspondiente -->
+        <input type="text" name="" id="nombre" size="6" maxlength="5"><br><br> <!-- Maxlength es para restrigir el numero de caracteres que se pueden poner -->      
+
+        <label for="pass">Contraseña</label>
+        <input type="password" name="" id="pass" autofocus><br><br><!-- El autofocus es para enfocar un elemento cada que se carga la pagina -->
+
+        <label for="correo">Correo</label>
+        <input type="email" name="" id="correo" placeholder="ejemplo@email.com"><br><br>
+
+        <label for="url">Domino</label>
+        <input type="url" name="" id="url" value="Perro"><br><br>
+
+        <label for="telefono">Telefono</label>
+        <input type="tel" name="" id="telefono" readonly><br><br>
+
+        <label for="num">Numero</label>
+        <input type="number" name="" id="num" min="0" max="10" disabled><br><br><!-- Disabled es una atributo que desabilida el input -->
+ 
+        <input type="color" name="" id=""><br><br>
+
+        <!-- Para los radio deben tener el mismo name,solo puedes seleccionar uno -->
+        <label for="panes1">Pan de morido</label>
+        <input type="radio" name="fav_pan" id="panes1" value="morido"><br></br>
+        <label for="panes2">concha</label> 
+        <input type="radio" name="fav_pan" id="panes2" value="concha"><br></br>
+        <label for="panes3">Pan</label> 
+        <input type="radio" name="fav_pan" id="panes3" value="cuernito"><br></br>
+        <!-- Se puede seleccionar mas de una opcion, el value es el dato que se pasa al backend -->
+        <label for="perro">Perro</label>
+        <input type="checkbox" name="animales" id="perro" value="perro"> <br><br>
+        <label for="gato">Gato</label>
+        <input type="checkbox" name="animales" id="gato" value="gato"> <br><br>
+        <label for="perico">Perico</label>
+        <input type="checkbox" name="animales" id="perico" value="perico"> <br><br>
+
+        <input type="date" name="" id=""><br><br>
+        <input type="datetime-local" name="" id=""><br><br>
+        <input type="file" name="" id=""><br><br>
+        <input type="hidden" name=""><!-- No se utiliza -->
+        <input type="image" src="img/pez_bobesponja.jpg" alt="" width="50%"><br><br><!-- Crea un boton de submit con una imagen -->
+        <input type="month" name="" id=""><br><br>
+        <input type="week" name="" id=""><br><br>
+        <input type="range" name="" id=""><br><br><!-- Es complicado de modificar su estilo en css -->
+        <input type="time" name="" id=""><br></br>
+        <input type="search" name="" id=""><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Reset">
+        <br><br>
+
+        <a href="https://www.w3schools.com/html/html_form_input_types.asp">Lista de los input que existen</a>
+
+    </form>
+
+</body>
+</html>

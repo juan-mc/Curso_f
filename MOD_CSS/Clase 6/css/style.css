@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+}
+/*Position
+    absolute: es para poner los contenedores segun los datos que le pongas( top, left, right bottom), el contenedor padre como tal no tendra una altura
+    z-index: para ver en que capa debe estar,se debe usar anteriormente la propiedad position absolute (el orden dependera en el orden en que aparezca en codigo)
+    
+    relative: es para crear un contenedor padre el cual tendra hijos con position absolute, los hijos se moveran conforme la posicion del padre
+
+    sticky: Para dejar anclado cierto elemento , se le debe poner un valor a la propiedad top para que funcione
+    fixed: deja el contenedor en el mismo lugar sin importar si hay un scroll, o el tamaño de la pagina siempre va a respetar la posicion que se le ponga a diferencia del absolute
+ */
+ nav{
+     background-color: darkgoldenrod;
+     color: white;
+     padding: 10px;
+     position: sticky;
+     top:0px;
+     z-index: 999;
+ }
+ li{
+     display: inline-block;
+ }
+ a{
+     text-decoration: none;
+     color: white;
+     font-weight: bold;
+     padding: 8px 16px;
+ }
+ a:hover{
+     background-color:cornflowerblue;
+ }
+ main{
+     position: relative;
+     background-color: aquamarine;
+     height: 50px;
+ }
+#sect1{
+    background-color: beige;
+    color: brown;
+    padding: 10px;
+    /* position: absolute; */
+    top:50px;
+    left: 10px;
+    z-index: 2;
+}
+/* div{
+    background-color: cadetblue;
+    color: black;
+    padding: 10px;
+    position: absolute;
+    left: -40px;
+    bottom: -20px;
+    z-index: 1;
+} */
+body p{
+    background-color: rgb(73, 56, 8);
+}
+body >p{
+    background-color: chocolate;
+    margin:10px 0;
+    /* z-index:2; */
+}
+
+#up{
+    position: fixed;
+    background-color: rgb(92, 19, 31);
+    color: white;
+    right:10px;
+    bottom: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 999;
+}
+/* 
+Especificidad 
+    Los cambios se aplicaran dependiendo el grado de especificidad que tenga la etiqueta
+        1-id (1,0,0)
+        2-clase (0,1,0)
+        3-etiqueta (0,0,1)
+    Pero si se combinan es decir etiqueta mas id (1,0,1) tendra mas relevancia que solo el id (1,0,0)
+*/
+html body footer.footer#footer{
+    background-color: gray;
+}
+body footer{/* Es para cualquier etiqueta footer dentro de body */
+    background-color: black;
+}
+#footer{
+    background-color: yellowgreen;
+}
+footer.footer{
+    background-color: violet;
+}
+.footer{
+    background-color:darkgreen;
+    color: white;
+}
+footer{
+    background-color: blue;
+    color: white;
+}
+body >footer{/* Es para aquellos hijos directos */
+    background-color: aqua;
+}
+
+div+p{/* Afecta a la etiqueta que esta enseguida del primer elemento */
+    background-color: yellow;
+}
+
+div~p{/* Afecta a todos los elementos que se encuentran despues de un div */
+    background-color: rgb(5, 163, 97);
+}
+/* Metodologia BEM es una forma de escribir codigo   */

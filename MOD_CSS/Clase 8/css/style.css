@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Helvetica;
+}
+section{
+    /* Flex:Acomoda el contenedor dependiendo del contenido */
+    display:flex;
+    /* flex-direction: La forma en que se van a acomodar los contenedores */
+  /*   flex-direction: row; */
+    /*flex-wrap: Los elementos se acomodan dependiendo de la pantalla, uno debajo del otro */
+   /*  flex-wrap:wrap; */
+   /* Para juntar felz-wrap y flex-direction se usa felx-flow */
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: rgb(11, 134, 48);
+    height: 100px;
+    /* Alinear verticalmente */
+    align-items: center;
+}
+div{
+    height: 50px;
+    padding: 10px;
+    background-color: burlywood;
+    border:1px solid rgb(255, 238, 0);
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,28 @@
+body{
+   background-color: aquamarine;
+}
+p{
+    font-family:Helvetica;
+    font-size: 24px;
+    color: brown;
+    text-align: center;
+    letter-spacing: 10px;/* Separar letras */
+    line-height: 30px;/* Separacion entre linea */
+    word-spacing: 15px;/* Separa entre cada palabra */
+}
+ul
+{
+    list-style-type:disclosure-closed;/* Tipos de viñetas disponibles */
+    list-style-position: inside;
+}
+
+ul li{
+    font-size: 30px;
+    color: rgb(83, 4, 94);
+    background-color: goldenrod;
+}
+
+#lista2
+{
+    list-style-image:url(../imgs/favicon.ico) ;/* Los ".." son porque como los estilos estan dentro de css se deben de salir de esa carpeta */
+}

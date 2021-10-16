@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        tr,td,th{
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--BOTONES-->
+    <button><a href="https://youtube.com">clic</a></button><!--A fuerzas se necesita dar clic al texto-->
+    <a href="https://youtube.com"><button>Clic</button></a><!-- Buena usabilidad, casi no se usa la etiqueta boton, pero es buena practica usarla segun su uso -->
+    <br>
+
+    <!-- TABLAS -->
+    <hr>
+    <h2>
+        Tablas
+    </h2>
+    <table><!-- contenedor padre -->
+        <tr><!-- table row(fila) -->
+            <td>Perro</td><!-- Celda -->
+            <td>Perro</td>
+        </tr>
+        <tr>
+            <td>Gato</td>
+            <td>Gato</td>
+            <td>Gato</td>
+            <td>Gato</td>
+        </tr>
+        <tr>
+            <td>Perico</td>
+        </tr>
+    </table>
+    <hr>
+
+    <table>
+        <tfoot><!-- Siempre se pondra en la parte de abajo -->
+            <tr>
+                <td>Footer</td>
+            </tr>
+        </tfoot>
+        <tbody><!-- Siempre queda enmedio -->
+            <tr>
+                <td>Perro</td>
+            </tr>
+            <tr>
+                <td>Gato</td>
+            </tr>
+        </tbody>
+        <thead><!-- Al ser la cabecera simpre se pondra hasta arriba sin importar en donde se ponga -->
+            <tr>
+                <th>Header</th><!-- table header -->
+            </tr>
+        </thead>
+    </table>
+    <hr>
+
+    <table>
+        <tr>
+            <td>Delfin</td>
+            <td>Delfin</td>
+            <td>Delfin</td>
+            <td rowspan="2">Delfin</td><!-- rowspan es el espacio de ocupa de filas -->
+        </tr>
+        <tr>
+            <td>Perro</td>
+            <td colspan="2">Perrox2</td>
+        </tr>
+        <tr>
+            <td colspan="2">Gato</td><!-- colspan es el espacio de ocupa -->
+            <td>Gato x2</td>
+            <td rowspan="2">Gato x3</td>
+        </tr>
+        <tr>
+            <td colspan="3">Perico</td>
+        </tr>
+    </table>
+
+    <hr>
+    <table>
+        <tr>
+            <td>Perro</td>
+            <td>Perro</td>
+            <td>Perro</td>
+            <td rowspan="2">Perro</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Perro</td>
+            <td rowspan="2">Perro</td>
+            <td>Perro</td>
+        </tr>
+        <tr>
+            <td colspan="2">Perro</td>
+        </tr>
+        <tr>
+            <td>Perro</td>
+            <td colspan="3">Perro</td>
+        </tr>
+    </table>
+<hr>
+    <table>
+        <tr>
+            <td colspan="4">Perro</td>
+        </tr>
+        <tr>
+            <td>Perro</td>
+            <td colspan="2">Perro</td>
+            <td rowspan="3">Perro</td>
+        </tr>
+        <tr>
+            <td colspan="3" rowspan="2">PerroPerro</td>
+        </tr>
+
+        <tfoot>
+            <tr>
+                <td rowspan="2">Perro</td>
+                <td>Perro</td>
+                <td colspan="2">Perro</td>
+            </tr>
+            <tr>
+                <td colspan="2">Perro</td>
+                <td rowspan="2">Perro</td>
+            </tr>
+            <tr>
+                <td colspan="2">Perro</td>
+            </tr>
+        </tfoot>
+    </table>
+<hr>
+
+<table>
+    <tr>
+        <td style="background-color: black;">Marcooo</td>
+        <td colspan="4">Perroooo</td>
+    </tr>
+
+    <tr>
+        <td style="background-color: black;">Marcooo</td>
+        <td>Perroooo</td>
+        <td colspan="2">Perroooo</td>
+        <td rowspan="3">Perroooo</td>
+    </tr>
+    <tr>
+        <td style="background-color: black;">Marcooo</td>
+        <td colspan="3" rowspan="2">Perroooo</td>
+    </tr>
+    <tr>
+        <td style="background-color: black;">Marcooo</td>
+    </tr>
+
+    <tfoot>
+        <tr>
+            <td style="background-color: black;">Marcooo</td>
+            <td rowspan="2">Perroooo</td>
+            <td>Perroooo</td>
+            <td colspan="2">Perroooo</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;">Marcooo</td>
+            <td>Peroooo</td>
+            <td colspan="2" rowspan="2">Perrooo</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;">Marcooo</td>
+            <td colspan="2">Perroooo</td>
+        </tr>
+        <tr style="background-color: black;">
+            <td>Marcooo</td>
+            <td>Marcooo</td>
+            <td>Marcooo</td>
+            <td>Marcooo</td>
+            <td>Marcooo</td>
+        </tr>
+    </tfoot>
+</table>
+
+<br>
+<br>
+
+
+</body>
+</html>

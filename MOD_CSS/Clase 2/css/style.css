@@ -1,0 +1,116 @@
+body{
+    background-color: beige;
+}
+section
+{
+    margin: 20px;
+}
+div
+{
+    height: 50px;
+}
+/*nombre*/
+#nombre1{
+    background-color: red;
+}
+#nombre2{
+    background-color: green;
+}
+#nombre3{
+    background-color: blue;
+}
+/* rgb */
+
+#rgb1{
+    background-color: rgb(255,255,255);
+}
+#rgb2{
+    background-color: rgb(0,0,0);
+}
+#rgb3{
+    background-color: rgb(255,0,0);
+}
+#rgb4{
+    background-color: rgb(0,255,0);
+}
+#rgb5{
+    background-color: rgb(0,0,255);
+}
+/* Hexadecimal */
+#hex1{
+    background-color: #ffffff;
+}
+#hex2{
+    background-color: #000000;
+}
+#hex3{
+    background-color: #ff0000;
+}
+#hex4{
+    background-color: #00ff00;
+}
+#hex5{
+    background-color: #0000ff;
+}
+#hex6{
+    background-color: #0000ffaa;
+}
+/* HSL (hue (de 0 a 360), saturation(de 0 a 100%), lightness(de 0 a 100%)) */
+#hsl1
+{
+    background-color: hsl(10, 0%, 100%);
+}
+#hsl2
+{
+    background-color: hsl(10, 0%, 0%);
+}
+#hsl3
+{
+    background-color: hsl(360, 100%, 50%);
+}
+#hsl4
+{
+    background-color: hsl(120, 100%, 50%);
+}
+#hsl5
+{
+    background-color: hsl(240, 100%, 50%);
+}
+/* rgba la a es de canal alfa(transparencia, va de 0 a 1) */
+
+#rgba1{
+    background-color: rgba(255,255,255,0.5);
+}
+#rgba2{
+    background-color: rgba(0,0,0,0.4);
+}
+#rgba3{
+    background-color: rgba(255,0,0,0.4);
+}
+#rgba4{
+    background-color: rgba(0,255,0,0.4);
+}
+#rgba5{
+    background-color: rgba(0,0,255,0.4);
+}
+/* HSLA*/
+#hsla1
+{
+    background-color: hsl(10, 0%, 100%,0.6);
+}
+#hsla2
+{
+    background-color: hsl(10, 0%, 0%,0.6);
+}
+#hsla3
+{
+    background-color: hsl(360, 100%, 50%,0.6);
+}
+#hsla4
+{
+    background-color: hsl(120, 100%, 50%,0.6);
+}
+#hsla5
+{
+    background-color: hsl(240, 100%, 50%,0.6);
+}

@@ -1,0 +1,48 @@
+*/* Selector universal */
+{
+    margin: 0;/* Esto es hacer un clear ya que cada navegador pone ciertos estilos, borra el margen de todos los elementos */
+}
+section
+{
+    background-color: bisque;
+    color: rgb(3, 41, 41);
+    text-align: center;
+    /* width: 100%; */
+    height: 20px;
+    margin: 10px;
+    border:5px solid black;
+    box-sizing: border-box;/* Para obligar a que mida lo que le pongas width y height */
+}
+div{
+    text-align: center;
+    /*  margin-top: 15px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        margin-left: 30px; */
+       /*  margin: 20px 5px;/* Si se pone de esta manera (ejex ejey) */ 
+       /* margin: 20px 5px 10px; */
+    margin:0px 20px 5px 10px;/* arriba izq abajo der */
+    border: 5px dotted goldenrod; /* ancho,tipo,color */
+    /* border-radius: 10px 15px 20px 5px; */
+    /* border-radius: 50%; */
+    padding:10px ;/* Espacio hacia adentro */
+}
+
+#div1
+{
+    background-color: darkcyan;
+    height: 50px;
+}
+#div2
+{
+    height: 80px;
+    background-color: blueviolet;
+}
+#div3
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color:brown;
+}

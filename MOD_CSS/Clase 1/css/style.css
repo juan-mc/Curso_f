@@ -1,0 +1,42 @@
+/* CSS BASICO
+    selector{
+        Propiedad:valor;
+    }
+*/
+body{
+    background-color: rgb(14, 91, 136);
+}
+h1{
+    color:beige;/*cambia el color de texto*/
+}
+p{
+    color:bisque;
+}
+/* #id */
+#parrafo2{
+    color: rgb(250, 136, 7);
+}
+p{ /*Se sobrescribe la regla, se toma la ultima*/
+    color:rgb(143, 40, 88);
+}
+#parrafo3{
+    color: rgb(2, 39, 27);
+}
+/* Para afectar a varios elementos se pone ","
+#parrafo5,#parrafo6{
+    color: rgb(70, 211, 166);
+}*/
+
+/* .clase */
+.dorado
+{
+    color: gold;
+}
+/* 
+    La jerarquia seguna la herencia de las cosas es:
+    1-id
+    2-clase
+    3-etiqueta 
+*/
+
+

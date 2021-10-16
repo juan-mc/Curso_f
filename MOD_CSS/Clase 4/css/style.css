@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin:0 ;
+    font-family: Helvetica;
+}
+header{
+    background-color: burlywood;
+    text-align: center;
+    padding: 20px;
+}
+nav{
+    background-color: rgb(54, 131, 134);
+    padding: 10px;
+}
+ul{
+    list-style-position: inside;
+}
+ul li{
+    color: beige;
+    list-style-type: none;
+    background-color: rgb(149, 138, 76);
+    display: inline-block;
+    padding: 8px 16px;
+    margin:10px;
+    border-radius: 3px;
+}
+
+table{
+    border-collapse: collapse;/* quita los espacios entre las celdas */
+}
+td{
+    border: 1px solid black;
+}
+div{
+   /*  background-color:rgb(54, 131, 134) ; */
+    /* border: 1px solid black; */
+    /* display: inline-block; */
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+img{
+    width: 50%;
+    display: block;
+    margin-left: auto;/* Para centrar la imagen se agrega margen al lado izq y der de manera automatica ya que usan todo el margen posible que pueda usar */
+    margin-right: auto;
+}
+section{
+    background-color: beige;
+}
+
+#sec2 div{/* Para alinear div es con float para listas display: inline-block; */
+   /* background-color: aquamarine; */
+   color: blueviolet;
+   display: block;
+   float: left;
+}

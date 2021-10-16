@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+}
+
+body{
+    padding: 10px;
+}
+
+nav{
+    background-color: orange;
+    padding: 10px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+nav ul li:hover{
+    background-color: rgb(207, 70, 70);
+    color:brown;
+    cursor: pointer;
+}
+
+/* Pseudoclases */
+
+/* ul li:first-child,  
+ul li:last-child{   
+    color: blue;
+    font-weight: bold;
+    text-transform: uppercase;
+} */
+
+ul li:nth-child(2n+0)  /* Para afectar al elemento que se va a modificar */
+{
+    color: pink;
+    font-weight: bold;
+    text-transform: uppercase;  
+}
+section
+{
+    background-color: #4567;
+    color:white;
+    padding: 10px;
+}
+section p{
+    margin:0;
+}
+
+/* PSeudoelementos (::) */
+
+section p::first-line{  /* afecta a la primera linea del parrafo*/
+    color:aqua;
+    font-weight: bold;
+}
+section p::first-letter{    /* Afecta solo a la primera letra */
+    color:black;
+    font-size:24px;
+    font-family: Arial;
+}
+section p::selection{   /* Cuando seleccionas el texto se aplican estas propiedades */
+    background-color: #000;
+    color: #fff;
+}
+
+        /* Los mas usados*/
+/* Se pone antes de un contenido */
+/* section::before{
+    content: url(../img/favicon.ico);
+} */
+/* Se pone despues del contenido */
+/* section::after{
+    content: url(../img/favicon.ico);
+} */
+
+section>div{
+    margin:50px 0;
+}
+
+section > div >div>img{
+    width: 50%;
+    display: block;
+    padding: 15px;
+}
+
+section > div>div>h2{
+    text-align: center;
+    font-size: 30px;
+}
+section > div>div>p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+
+        /* mediaqueris */
+    /* Cuando cumple con la condicion que se pone entre parentesis se aplican los estilos que */
+@media screen and (min-width:768px){
+    section > div{
+        float: left;
+        width: 46.4%;
+        background-color: #4567;
+        margin:0 15px;
+    }
+}
+@media screen and (max-width:768px){
+    nav ul li{
+        display: block;
+    }
+    nav{
+        background-color: green;
+    }
+}
+@media (min-width:769px) and (max-width:920px){
+    nav{
+        background-color:coral;
+    }
+}
