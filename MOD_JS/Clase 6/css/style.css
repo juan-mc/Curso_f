@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+body{
+    background-image: url(../img/fondo2.png);
+    background-size: 100%;
+    padding-left: calc(100%/4);
+}
+.card{
+    width: 300px;
+    height: 436.75px;
+    background-color: gray;
+    padding: 10px;
+    margin-bottom: 5%;
+    transition:  transform 2s;
+}
+.card:hover{
+    box-shadow: 1px 1px 16px 3px white;
+    transform: translateX(50px);
+}
+.card .cardyellow{
+    padding: 10px;
+    background-image: url(../img/textura.png);
+    background-size: 115%;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 16px 3px black;
+}
+.card .cardyellow .title{
+    border-left:1px solid #b48032;
+    border-top:1px solid #eea942;
+    box-shadow: -4px -4px 4px 0px rgba(54, 33, 12, 0.6) inset;
+    padding: 8px 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #55512d;
+    font-weight:550;
+}
+.card .cardyellow #simbolo{
+    width: 25px;
+}
+.card .cardyellow .stars{
+    display: flex;
+    justify-content: right;
+}
+.card .cardyellow .stars img{
+    width: 8%;
+}
+.card .cardyellow .img{
+    margin: 0 5%;
+    width: 90%;
+    height: 235px;
+    background-color: aqua;
+    background-size: 125%;   
+    background-position: -28px -73px;
+}
+.card .cardyellow .info{
+    background-color:#eae1aa;
+    border:3px solid #c37b29;
+    margin-top: 10px;
+    padding: 1px;
+    height: 5.5em;
+}
+.card .cardyellow .info .type{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.card .cardyellow .info .desc{
+    /* font-size: 12px; */
+    font-size: .7em;
+    font-style: italic;
+    text-align: justify;
+    line-height: 12px;
+    margin-bottom: 5px;
+}
+.card .cardyellow .info .specs{
+    border-top: 1px solid black;
+    font-size: 12px;
+    text-align: right;
+}
