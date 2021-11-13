@@ -10,18 +10,34 @@ body{
     padding-left: calc(100%/4);
 }
 .card{
+    position: relative;
     width: 300px;
     height: 436.75px;
     background-color: gray;
     padding: 10px;
     margin-bottom: 5%;
-    transition:  transform 2s;
+    /* transition:  transform 2s; */
+    overflow: hidden; 
 }
-.card:hover{
-    box-shadow: 1px 1px 16px 3px white;
-    transform: translateX(50px);
+ .card:before{
+    content: '';
+    position: absolute;
+    height: 500px;
+    width:20px ;
+    background: #f3f3f3;
+    box-shadow: 0 0 10px #fff;
+    filter: blur(1px);
+    opacity: 0.9;
+    top: 140px;
+    transition: 0.7s;
+    transform: rotate(-60deg) translateX(-60px);
+} 
+.card:hover::before{
+    /* box-shadow: 1px 1px 16px 3px white; */
+    /* transform: translateX(50px); */
+    transform: rotate(-60deg) translate(500px,70px);
 }
-.card .cardyellow{
+.cardyellow{
     padding: 10px;
     background-image: url(../img/textura.png);
     background-size: 115%;
