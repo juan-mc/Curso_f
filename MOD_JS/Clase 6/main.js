@@ -223,7 +223,7 @@ function cartas(num1){
         <div class="cardyellow">
             <div class="title">
                 <div>${tiktoker[index].name}</div>
-                <div><img src="img/simbolo.png" alt="" id="simbolo"></img></div>
+                <div><img src="img/Simbolo.png" alt="" id="simbolo"></img></div>
             </div>
             <div class="stars">
                 ${estrellas(tiktoker[index].stars)}
