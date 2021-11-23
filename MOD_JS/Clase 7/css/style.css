@@ -1,0 +1,33 @@
+*{
+    background-color: blueviolet;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: rgb(45, 179, 45);
+    height: 400px;
+}
+
+main img{
+    width: 200px;
+    background-color: rgb(45, 179, 45);
+}
+main > div{
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: calc(100%/3);
+    left: 200px;
+}
+main > div > div{
+    font-size: 40px;
+}
+main > div > div:hover{
+    cursor: pointer;
+    font-size: 35px;
+}
