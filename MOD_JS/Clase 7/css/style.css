@@ -22,7 +22,7 @@ main > div{
     align-items: center;
     position: absolute;
     bottom: calc(100%/3);
-    left: 10%;
+    left:5%;
 }
 main > div > div{
     font-size: 40px;
