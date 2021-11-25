@@ -2,7 +2,7 @@ var textScreen='';
 var total=0;
 var tipoOp='';
 var num1,num2;
-var flagPoint=0;
+var flagPoint=1;
 function mostrar(texto){
     document.getElementById('screen').innerText=texto;
 }
@@ -11,10 +11,10 @@ function ingresar(numero){
         mostrar(textScreen);
 }
 function punto(){
-    if(flagPoint==0){
+    if(flagPoint==1){
         textScreen=textScreen+'.';
         mostrar(textScreen);
-        flagPoint=1;
+        flagPoint=0;
     }
 }
 function borrar(){
@@ -24,42 +24,50 @@ function borrar(){
     document.getElementById('screen').innerText='';
 }
 function resolver(operacion){
-    flagPoint=0;
+    //Se activa la bandera de punto por si el usuario quiere seguir ingresando otro flotante
+    flagPoint=1;
     tipoOp=operacion;
-    if(textScreen.includes('.'))
+    //Por si el usuario presiona alguna tecla de operacion sin haber ingresado un numero
+    if(textScreen=='')
     {
-        num1=parseFloat(textScreen);
-        total=parseFloat(total);
+        mostrar('');
     }
     else{
-        num1=parseInt(textScreen);
-    }
-
-    if(total=='')
-    {
-        total=num1;
-        mostrar(total);
-        textScreen='';
-    }
-    else{
-        switch(operacion){
-            case '+':
-                total+=num1;
-                break;
-            case '-':
-                total-=num1;
-                break;
-            case '*':
-                total*=num1;
-                break;
-            case '/':
-                total/=num1;
-                break;
-            default:
-                break;
+        if(textScreen.includes('.'))
+        {
+            num1=parseFloat(textScreen);
+            total=parseFloat(total);
         }
-        mostrar(total);
-        textScreen='';
+        else{
+            num1=parseInt(textScreen);
+        }
+    
+        if(total=='')
+        {
+            total=num1;
+            mostrar(total);
+            textScreen='';
+        }
+        else{
+            switch(operacion){
+                case '+':
+                    total+=num1;
+                    break;
+                case '-':
+                    total-=num1;
+                    break;
+                case '*':
+                    total*=num1;
+                    break;
+                case '/':
+                    total/=num1;
+                    break;
+                default:
+                    break;
+            }
+            mostrar(total);
+            textScreen='';
+        }
     }
 }
 function igual(){
