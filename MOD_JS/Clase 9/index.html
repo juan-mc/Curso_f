@@ -13,10 +13,10 @@
         <div id="screen">c:</div>
         <div id="btns">
             <section id="btnsOp">
-                <div class="operation" id="mas" onclick="sumar()">+</div>
-                <div class="operation"onclick="restar()">-</div>
-                <div class="operation">/</div>
-                <div class="operation">*</div>
+                <div class="operation" id="mas" onclick="resolver('+')">+</div>
+                <div class="operation" onclick="resolver('-')">-</div>
+                <div class="operation" onclick="resolver('/')">/</div>
+                <div class="operation" onclick="resolver('*')">*</div>
                 <div class="operation" onclick="borrar()">C</div>
             </section>
             <section id="btnsNum">
@@ -30,6 +30,7 @@
                 <div class="num" onclick="ingresar(2)">2</div>
                 <div class="num" onclick="ingresar(3)">3</div>
                 <div class="num" onclick="ingresar(0)">0</div>
+                <div class="num" onclick="punto()">.</div>
                 <div class="num" id="igual" onclick="igual()">=</div>
             </section>
         </div>

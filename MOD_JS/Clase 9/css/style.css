@@ -96,7 +96,7 @@ main #btns #btnsNum .num:hover{
 }
 main #btns #btnsNum #igual{
     background-color: rgb(12, 182, 182);
-    grid-column: 2/4;
+    /* grid-column: 2/4; */
     border-radius: 5%;
     box-shadow:1.5px 1.5px 0px 1px rgb(25, 60, 66);
 }
