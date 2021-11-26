@@ -173,7 +173,8 @@ main #btns #btnsNum #igual:hover{
         font-size: 5vh;
     }
     main #btns #btnsNum{
-        column-gap: 10px;
+        column-gap: 2vh;
+        row-gap: 1vh;
     }
     main #btns #btnsNum .num{
         font-size:2vh;
