@@ -59,6 +59,15 @@ main #btns #btnsOp .operation:hover{
     cursor: pointer;
     box-shadow:1.5px 1.5px 0px 1px rgb(8, 52, 134)inset;
 }
+main #btns #btnsOp .operation#deleteCh{
+    background-color: rgb(38, 93, 104);
+    box-shadow:1.5px 1.5px 0px 1px rgb(19, 45, 49);
+    grid-column: 1/3;
+    height: 4vh;
+}
+main #btns #btnsOp .operation#deleteCh:hover{
+    box-shadow:1.5px 1.5px 0px 1px rgb(19, 45, 49)inset;
+}
 main #btns #btnsOp .operation#mas{
     font-size: 10vh;
     font-weight:bolder;
@@ -79,8 +88,9 @@ main #btns #btnsNum{
     width: 50%;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 10px;
+    row-gap: 20px;
     column-gap: 30px;
+    vertical-align: middle;
 }
 main #btns #btnsNum .num{
     font-size: 3.5vh;
@@ -96,7 +106,6 @@ main #btns #btnsNum .num:hover{
 }
 main #btns #btnsNum #igual{
     background-color: rgb(12, 182, 182);
-    /* grid-column: 2/4; */
     border-radius: 5%;
     box-shadow:1.5px 1.5px 0px 1px rgb(25, 60, 66);
 }
@@ -153,6 +162,12 @@ main #btns #btnsNum #igual:hover{
         width: 25vh;
         height: 20vh;
         align-items: center;
+    }
+    main #btns #btnsOp .operation{
+        font-size: 2vh;
+    }
+    main #btns #btnsOp .operation#deleteCh{
+        height: 2vh;
     }
     main #btns #btnsOp .operation#mas{
         font-size: 5vh;
