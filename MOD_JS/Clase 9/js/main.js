@@ -1,8 +1,9 @@
 var textScreen='';
 var total=0;
 var tipoOp='';
-var num1,num2;
+var num1;
 var flagPoint=1;
+const bmo= new Audio('media/BMO.mp3');
 function mostrar(texto){
     document.getElementById('screen').innerText=texto;
 }
@@ -90,4 +91,8 @@ function resolver(operacion){
 function igual(){
     resolver(tipoOp);
     tipoOp='';
+}
+function SonidoIgual(){
+    igual();
+    bmo.play();
 }

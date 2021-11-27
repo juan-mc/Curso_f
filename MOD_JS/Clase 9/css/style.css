@@ -168,6 +168,7 @@ main #btns #btnsNum #igual:hover{
     }
     main #btns #btnsOp .operation#deleteCh{
         height: 2vh;
+        padding-bottom: 25%;
     }
     main #btns #btnsOp .operation#mas{
         font-size: 5vh;
