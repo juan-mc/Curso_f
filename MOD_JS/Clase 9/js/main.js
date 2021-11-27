@@ -22,7 +22,7 @@ function borrar(){
     textScreen='';
     total=0;
     tipoOp='';
-    document.getElementById('screen').innerText='';
+    document.getElementById('screen').innerText='⚫________⚫';
 }
 function deleteCh(){
         textScreen=textScreen.toString();
