@@ -1,19 +1,19 @@
 const music= new Audio('media/starwars.mp3');
 music.loop=true;
 music.autoplay=true;
-document.addEventListener('keydown',mensaje);
+document.addEventListener('keydown',mover);
 var marginTop = 0;
 var marginLeft = 0;
 var velocidad = 20;
 
-function mensaje(){
+function mover(num){
     var ancho=window.innerWidth;
     var alto=window.innerHeight;
     var halcon=document.getElementById('Halcon');
     var anchoImg=halcon.clientWidth;
+    var tecla=event.keyCode;
     //Si rebasa el ancho de la pantalla,cuando va a la derecha
-    if(parseInt(anchoImg+marginLeft)>=ancho){
-        
+    if(parseInt(anchoImg+marginLeft)>=ancho){   
         marginLeft=0;
         halcon.style.marginLeft = marginLeft + 'px';
     }
@@ -30,20 +30,24 @@ function mensaje(){
         marginTop=alto-anchoImg;
         halcon.style.marginTop = marginTop + 'px';
     }
-    switch (event.keyCode) {
-        case 37:
+    if(ancho<400){
+        tecla=num;
+    }
+
+    switch (tecla) {
+        case 37://izq
             marginLeft -= velocidad;
             halcon.style.transform='rotate(-90deg)';
             halcon.style.marginLeft = marginLeft + 'px';
             break;
 
-        case 38:
+        case 38://arriba
             marginTop -= velocidad;
             halcon.style.transform='rotate(0deg)';
             halcon.style.marginTop = marginTop + 'px';
             break;
             
-        case 39:
+        case 39://der
             marginLeft += velocidad;
             halcon.style.transform='rotate(90deg)';
             halcon.style.marginLeft = marginLeft + 'px';
