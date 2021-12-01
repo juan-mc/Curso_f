@@ -10,7 +10,6 @@ main{
     height:100vh;
     background-image: url(../img/spacetravell.gif);
     background-size: cover;
-
 }
 img{
     width: 10%;
@@ -19,7 +18,7 @@ img{
 #botones{
     display: none;
 }
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 500px){
     main{
         height:90vh;
     }

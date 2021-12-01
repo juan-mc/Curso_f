@@ -1,6 +1,7 @@
 const music= new Audio('media/starwars.mp3');
 music.loop=true;
 music.autoplay=true;
+music.play();
 document.addEventListener('keydown',mover);
 var marginTop = 0;
 var marginLeft = 0;
