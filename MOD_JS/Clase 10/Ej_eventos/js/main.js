@@ -1,12 +1,14 @@
-const music= new Audio('media/starwars.mp3');
-music.loop=true;
-music.autoplay=true;
-music.play();
+
 document.addEventListener('keydown',mover);
 var marginTop = 0;
 var marginLeft = 0;
 var velocidad = 20;
-
+window.onload=function(){
+    const music= new Audio('media/starwars.mp3');
+    music.loop=true;
+    music.autoplay=true;
+    /* music.play(); */
+}
 function mover(num){
     var ancho=window.innerWidth;
     var alto=window.innerHeight;
