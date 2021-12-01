@@ -31,10 +31,10 @@ function mover(num){
         marginTop=alto-anchoImg;
         halcon.style.marginTop = marginTop + 'px';
     }
-    if(ancho<400){
+    if(ancho<=500){
         tecla=num;
     }
-
+    /* console.log(tecla); */
     switch (tecla) {
         case 37://izq
             marginLeft -= velocidad;
