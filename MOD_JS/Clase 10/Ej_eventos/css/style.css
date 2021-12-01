@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    height:100vh ;
+    display: flex;
+    flex-direction: column;
+} */
+body{
+    background-color: #000000;
+}
+main{
+    height: 100vh;
+    /* width: 100%; */
+    background-image: url(../img/spacetravell.gif);
+    /* background-repeat:repeat-y;
+    background-size: 200vh; */
+    background-size: cover;
+
+}
+img{
+    width: 10%;
+}

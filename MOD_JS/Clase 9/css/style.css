@@ -99,6 +99,9 @@ main #btns #btnsNum .num{
     color:white;
     text-align: center;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 main #btns #btnsNum .num:hover{
     cursor: pointer;
