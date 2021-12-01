@@ -21,4 +21,5 @@ main{
 }
 img{
     width: 10%;
+    transform: rotate(90deg);
 }
