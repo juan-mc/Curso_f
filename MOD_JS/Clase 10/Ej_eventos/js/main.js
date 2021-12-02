@@ -3,12 +3,7 @@ document.addEventListener('keydown',mover);
 var marginTop = 0;
 var marginLeft = 0;
 var velocidad = 20;
-window.onload=function(){
-    const music= new Audio('media/starwars.mp3');
-    music.loop=true;
-    music.autoplay=true;
-    /* music.play(); */
-}
+var controlM=0;
 function mover(num){
     var ancho=window.innerWidth;
     var alto=window.innerHeight;
@@ -64,4 +59,15 @@ function mover(num){
         default:
             break;
     }
+    playM();
+}
+function playM(){
+    const msc= new Audio('media/starwars.mp3');
+    if(controlM==0){
+        console.log('entro');
+        msc.play();
+        msc.loop=true;
+        msc.volume=0.4;
+        controlM=1;
+    } 
 }

@@ -31,5 +31,6 @@ img{
     #botones div{
         font-size: 5vh;
         cursor: pointer;
+        color: white;
     }
 }
