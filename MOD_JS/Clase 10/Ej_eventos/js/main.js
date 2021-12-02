@@ -31,7 +31,6 @@ function mover(num){
     if(ancho<=500){
         tecla=num;
     }
-    /* console.log(tecla); */
     switch (tecla) {
         case 37://izq
             marginLeft -= velocidad;
