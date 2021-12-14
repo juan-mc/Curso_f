@@ -1,0 +1,28 @@
+div#container{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+}
+div#container2{
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+}
+div#container3{
+    background-color:blue;
+    width: 200px;
+    height: 200px;
+}
+
+#bemo{
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/BEMO.png);
+    background-size: contain;
+}
+#mas{
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/mas.png);
+    background-size: contain;
+}

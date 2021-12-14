@@ -70,3 +70,7 @@ function playM(){
         controlM=1;
     } 
 }
+
+window.onresize=function(){
+    window.location.reload();
+}
