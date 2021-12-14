@@ -47,17 +47,21 @@ div img{
     border: solid 50px rgba(#000, .2);
 }
 div.theback{
-    /* position:absolute; */
     width: 350px;
     height: 350px;
     background-image: url(../img/portal.png);
     background-repeat: no-repeat ;
     background-size: cover;
-    /* margin: 10px; */
+    margin: 10px;
     backface-visibility: hidden;
     transform: rotateY(180deg);
     display: flex;
     align-items: center;
     justify-content: center;
-
+}
+div.theback p{
+    color: #000;
+    font-size:auto;
+    text-align: justify;
+    width: 200px;
 }

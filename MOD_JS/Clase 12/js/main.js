@@ -18,7 +18,12 @@ fetch(urlApi)
             <p>${data.results[index].name}</p>
             </div>
             <div class="theback">
-            <p>${data.results[index].name}</p>
+            <p>
+                Status: ${data.results[index].status} 
+                <br>Species: ${data.results[index].species} 
+                <br>Gender: ${data.results[index].gender}
+                <br>Location: ${data.results[index].location.name}  
+            </p>
             <div>
             `;
             container.appendChild(element);
