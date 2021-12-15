@@ -15,7 +15,7 @@ const cargarPers=(url)=>{
             let container=document.getElementsByTagName('main')[0];
             let element=document.createElement('div');
             element.className="container";
-            /* console.log(data); */
+            console.log(data);
             element.innerHTML=`
             <div class="front">
             <img src="${data.results[index].image}" alt="">
@@ -24,9 +24,9 @@ const cargarPers=(url)=>{
             <div class="theback">
             <p>
                 Status: ${data.results[index].status} 
-                <br>Species: ${data.results[index].species} 
-                <br>Gender: ${data.results[index].gender}
-                <br>Location: ${data.results[index].location.name}  
+                Species: ${data.results[index].species} 
+                Gender: ${data.results[index].gender}
+                Location: ${data.results[index].location.name}  
             </p>
             `;
             container.appendChild(element);
