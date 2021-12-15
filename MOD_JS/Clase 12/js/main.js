@@ -22,8 +22,7 @@ const cargarPers=(url)=>{
             <p>${data.results[index].name}</p>
             </div>
             <div class="theback">
-            <p>
-                Status: ${data.results[index].status} 
+            <p> Status: ${data.results[index].status} 
                 Species: ${data.results[index].species} 
                 Gender: ${data.results[index].gender}
                 Location: ${data.results[index].location.name}  
