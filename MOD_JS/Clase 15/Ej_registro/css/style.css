@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Helvetica;
+}
+body{
+    background-image: url(../img/patternpad.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body h1{
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    color: #f8d983;
+    text-shadow: 1px 3px #2c1414;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+section#registro{
+    display: flex;
+    justify-content: center;
+    background-color: #411a12;
+}
+form{
+    padding: 10px;
+    font-size: 3.5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    color: #cc8949;
+}
+form #send{
+    font-weight: bold;
+    grid-column: 1/3;
+    box-shadow: 0px 7px 8px 0px rgb(0 0 0 / 59%);
+    -webkit-box-shadow: 0px 7px 8px 0px rgb(0 0 0 / 59%);
+    -moz-box-shadow: 0px 7px 8px 0px rgb(0 0 0 / 59%);
+}
+form #send:hover{
+    cursor: pointer;
+    background-color: #cc8949;
+}
+
+input{
+    font-size: medium;
+    padding: 5px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+}
+input.campo:hover{
+    box-shadow: 0px 3px 5px 1px #ecc65fa8;
+}
+section#mostrar{
+    padding-top: 5%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+section#mostrar div.tarjeta{
+    background-color: #cc8949;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #251b11;
+    margin: 10px;
+}
+section#mostrar div.tarjeta:hover{
+    box-shadow: 0px 3px 5px 1px #eccc73;
+    transform: translateY(-15px);
+    transition: .5s ease-out;
+}
+section#mostrar div.tarjeta button{
+    background-color: rgb(110, 18, 18);
+    border: none;
+    font-weight: bold;
+    color: white;
+    padding: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+}
+section#mostrar div.tarjeta button:hover{
+    cursor:pointer
+}
+section#mostrar div.tarjeta .imgcont{
+    display: flex;
+    justify-content: center;
+}
