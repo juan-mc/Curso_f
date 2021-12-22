@@ -48,6 +48,7 @@ form #send:hover{
 input{
     font-size: medium;
     padding: 5px;
+    font-size:1.5vw ;
     border: none;
     border-top-left-radius: 10px;
     border-top-right-radius: 0px;
@@ -94,4 +95,9 @@ section#mostrar div.tarjeta button:hover{
 section#mostrar div.tarjeta .imgcont{
     display: flex;
     justify-content: center;
+}
+@media (max-width: 625px){
+    body{
+        background-size: 100vh;
+    }
 }
