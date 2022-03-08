@@ -210,9 +210,14 @@ var tiktoker = [
     },
 ];
 
-console.log(tiktoker[0].atk);
+/* console.log(tiktoker[0].atk); */
 
-cartas(5);
+/* cartas(5); */
+start();
+function start(){
+    let numCards = prompt("Cuantas cartas desea ver:", "Ingrese un numero entero positivo");
+    cartas(numCards);
+}
 
 function cartas(num1){
     for (let index = 0; index < num1; index++) {
@@ -241,7 +246,6 @@ function cartas(num1){
         imagen.style.backgroundImage='url("../Clase 6/img/cards/'+tiktoker[index].img+'")';
      }
 }
-
 function estrellas(num){
     var estrellas='';
     for (let index = 0; index < num; index++) {
